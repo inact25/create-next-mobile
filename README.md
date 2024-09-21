@@ -1,7 +1,7 @@
 
 # Create Next Mobile
 
-This project is named **Create Next Mobile** and is built using **Next.js**, tailored specifically for **mobile app development**. It leverages **Atomic Design principles** to structure components and ensure maintainability, scalability, and reusability. This project is set up with modern web technologies including **TypeScript**, **Tailwind CSS**, and **PostCSS** to provide a strong foundation for mobile-first applications.
+This project is named **Create Next Mobile** and is built using **Next.js**, tailored specifically for **mobile web app development**. It leverages **Atomic Design principles** to structure components and ensure maintainability, scalability, and reusability. This project is set up with modern web technologies including **TypeScript**, **Tailwind CSS**, and **PostCSS** to provide a strong foundation for mobile-first applications.
 
 ## Project Features
 
@@ -9,7 +9,7 @@ This project is named **Create Next Mobile** and is built using **Next.js**, tai
 - **TypeScript**: Provides static type checking to ensure the correctness of the application.
 - **Tailwind CSS**: Enables easy styling with a mobile-first design philosophy.
 - **Atomic Design Principles**: Components are organized based on **Atoms**, **Molecules**, and **Organisms** to promote reusability.
-- **Mobile-First**: This project is specifically designed to create mobile applications with Next.js, focusing on mobile-specific layouts and performance optimizations.
+- **Mobile-First**: This project is specifically designed to create mobile web applications with Next.js, focusing on mobile-specific layouts and performance optimizations.
 
 ## Project Folder Structure
 
