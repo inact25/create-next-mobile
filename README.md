@@ -33,7 +33,8 @@ src/
 │   │   └── BaseLayout.tsx       # Base layout for all pages
 │   ├── molecules/               # Combination of atoms
 │   │   ├── MainHeader.tsx       # Header with navigation
-│   │   └── MainNav.tsx          # Mobile navigation component
+│   │   ├── MainNav.tsx          # Mobile navigation component
+│   │   └── MobileOnly.tsx       # Component for mobile-only features
 │   └── organisms/               # Larger, reusable components
 │       └── home/                # Organisms specific to the homepage
 │           ├── Linklist.tsx     # List of links for navigation
