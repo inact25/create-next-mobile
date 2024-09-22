@@ -8,7 +8,10 @@ import Linklist from "@/components/organisms/home/Linklist";
 
 
 const Home: React.FC = () => {
-  const mode = "full" //full, screen-only, header-only, nav-only
+  const mode = "full"
+  //full : effective content 80dvh
+  //screen-only : effective content 100dvh
+  //header-only, nav-only : effective content 90dvh
   return (
       <BaseLayout mode={mode}>
           <Content position={"middle"} mode={mode}>
