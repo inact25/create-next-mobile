@@ -6,7 +6,7 @@ interface ContentProps {
     position?: 'top-left' | 'top-center' | 'top-right' | 'mid-left' | 'middle' | 'mid-right' | 'bottom-left' | 'bottom-center' | 'bottom-right';
 }
 
-const Content: React.FC<ContentProps> = ({position, children, type = 'dynamic'}) => {
+const Content: React.FC<ContentProps> = ({position = 'top-left', children, type = 'dynamic'}) => {
     const positionClasses = {
         'top-left': 'items-start justify-start',
         'top-center': 'items-start justify-center',

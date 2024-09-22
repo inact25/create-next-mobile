@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import React from "react";
+import MobileOnly from "@/components/molecules/MobileOnly";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +36,7 @@ export default function RootLayout({
         </div>
 
         <div className="hidden md:flex h-[100vh] justify-center items-center bg-gray-100 text-center">
-          <h1 className="text-2xl font-bold text-red-600">Please Access from your Mobile Device</h1>
+           <MobileOnly/>
         </div>
       </>
       </body>

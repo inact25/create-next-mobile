@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import MainHeader from "@/components/molecules/MainHeader";
 import MainNav from "@/components/molecules/MainNav";
 
-const BaseLayout: React.FC = ({children}) => {
+const BaseLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <div className="flex flex-col h-[100dvh] overflow-y-hidden">
             <MainHeader/>
