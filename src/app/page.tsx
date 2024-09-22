@@ -8,9 +8,10 @@ import Linklist from "@/components/organisms/home/Linklist";
 
 
 const Home: React.FC = () => {
+  const mode = "full" //full, screen-only, header-only, nav-only
   return (
-      <BaseLayout>
-          <Content position={"middle"}>
+      <BaseLayout mode={mode}>
+          <Content position={"middle"} mode={mode}>
               <Wrapper>
                   <Logo/>
                   <Title/>

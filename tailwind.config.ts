@@ -1,7 +1,7 @@
 import mobileConfig from './mobile.config'
 
 const config: {
-  plugins: any[];
+  plugins: never[];
   theme: {
     extend: {
       minHeight: {
@@ -26,7 +26,16 @@ const config: {
         "header-max-size": string
       };
       colors: { background: string; foreground: string };
-      height: { "header-size": string; "content-size": string; "footer-size": string; "content-size-sm": string }
+      height: {
+        "header-size": string;
+        "content-size-header-sm": string;
+        "content-size-footer": string;
+        "content-size": string;
+        "content-size-header": string;
+        "footer-size": string;
+        "content-size-sm": string;
+        "content-size-footer-sm": string
+      }
     }
   };
   content: string[]
@@ -58,6 +67,11 @@ const config: {
         'header-size': mobileConfig.footerSize,
         'content-size': `calc(100dvh - (${mobileConfig.headerMinSize} + ${mobileConfig.footerMinSize}))`,
         'content-size-sm': `calc(100dvh - (${mobileConfig.headerMaxSize} + ${mobileConfig.footerMaxSize}))`,
+        'content-size-header': `calc(100dvh - (${mobileConfig.headerMinSize}))`,
+        'content-size-footer': `calc(100dvh - (${mobileConfig.footerMinSize}))`,
+        'content-size-header-sm': `calc(100dvh - (${mobileConfig.headerMaxSize}))`,
+        'content-size-footer-sm': `calc(100dvh - (${mobileConfig.footerMaxSize}))`,
+
       },
       padding: {
         'footer-size': mobileConfig.footerMinSize,
